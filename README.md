@@ -44,8 +44,9 @@ Pick whichever files you'd like to download.. PLEASE DON'T DOWNLOAD THE WHOLE TH
 2) Is there way to store the .git/config on the repo so that user doesn't have to do step 6 above? Brainlife current does not allow anonymous access.
 3) Brainlife provides full provenance and dataset metadata. Right now I am ignoring this when I setup the Datalad repo. How can I store this on datalad? Here is an example provenance.json > https://brainlife.io/api/warehouse/dataset/prov/5c0bdef7f6f108004b490dc0 
 4) This works great for publication. Should I allow user to download dataset directly from brainlife *project* also? (this is something brainlife team needs to discuss)
-5) When everything looks good, how can I get brainlife superdataset listed on datalad's global superdataset registry?
-6) This repo is constructed by a script `list`(stored in this repo) which runs a whole bunch of `git-annex addurl` command. I briefly tried `datalad addurls` command but I couldn't get it to work. Maybe it's faster to use this?
+5) When everything looks good, how can I get brainlife superdataset listed on datalad's global registry?
+6) This repo is constructed by a generated script `list`(stored in this repo) which runs a whole bunch of `git-annex addurl` command. I briefly tried `datalad addurls` command but I couldn't get it to work. Maybe it's faster to use this?
+7) Ultimately, brainlife will auto generate these repos for each brainlife publications, and setup git submodule under https://github.com/brainlife/datalad. 
 
 # Notes..
 
